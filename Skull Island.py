@@ -76,7 +76,11 @@ elif cave != "a":
     if cave_2nd_choice == "a":
         secret_of_life = input("You found it! It's an envelope that reads: S.O.L! That stands for the Secret Of Life!\n"
                                "Are you excited? Press [a] to read this!: ")
-        if secret_of_life == "a":
+        if secret_of_life != "a":
+            print("You lose just a sec before the greatest revelation of your life...C'mon!")
+            exit()
+
+        else:
             print("With shaken hands you open the envelope. It reads:\n"
                   "*************************\n"
                   "Congratulations! If you played this game\n"
@@ -84,3 +88,6 @@ elif cave != "a":
     else:
         print("You lose just a sec before the greatest revelation of your life...C'mon!")
         exit()
+else:
+    print("You lose just a sec before the greatest revelation of your life...C'mon!")
+    exit()
